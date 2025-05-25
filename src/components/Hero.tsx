@@ -1,7 +1,10 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowDown, MapPin, Mail, Github, Linkedin } from "lucide-react";
 
 const Hero = () => {
+  const [imageError, setImageError] = useState(false);
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     element?.scrollIntoView({ behavior: 'smooth' });
@@ -18,21 +21,19 @@ const Hero = () => {
         <div className="animate-fade-in">
           <div className="mb-6">
             <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 p-1">
-              <div className="w-full h-full rounded-full bg-white overflow-hidden">
-                {/* Replace "/profile-image.jpg" with your actual image path */}
-                <img 
-                  src="/profile-image.jpg" 
-                  alt="Ons Saidi" 
-                  className="w-full h-full object-cover rounded-full"
-                  onError={(e) => {
-                    // Fallback to initials if image fails to load
-                    e.currentTarget.style.display = 'none';
-                    e.currentTarget.nextElementSibling.style.display = 'flex';
-                  }}
-                />
-                <div className="w-full h-full hidden items-center justify-center">
-                  <span className="text-3xl font-bold text-blue-600">OS</span>
-                </div>
+              <div className="w-full h-full rounded-full bg-white flex items-center justify-center overflow-hidden">
+                {!imageError ? (
+                  <img
+                    src="/me.png"
+                    alt="Ons Saidi"
+                    className="w-full h-full object-cover rounded-full"
+                    onError={() => setImageError(true)}
+                  />
+                ) : (
+                  <div className="w-full h-full flex items-center justify-center bg-white rounded-full">
+                    <span className="text-3xl font-bold text-blue-600">OS</span>
+                  </div>
+                )}
               </div>
             </div>
             <div className="flex items-center justify-center gap-2 text-gray-600 mb-4">
