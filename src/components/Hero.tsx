@@ -20,6 +20,7 @@ const Hero = () => {
       <div className="max-w-4xl mx-auto text-center relative z-10">
         <div className="animate-fade-in">
           <div className="mb-6">
+<<<<<<< HEAD
             <div className="w-60 h-60 mx-auto mb-6 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 p-1">
               <div className="w-full h-full rounded-full bg-white flex items-center justify-center overflow-hidden">
                <img 
@@ -32,6 +33,22 @@ const Hero = () => {
                     e.currentTarget.nextElementSibling.style.display = 'flex';
                   }}
                 />
+=======
+            <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 p-1">
+              <div className="w-full h-full rounded-full bg-white flex items-center justify-center overflow-hidden">
+                {!imageError ? (
+                  <img
+                    src="/me.png"
+                    alt="Ons Saidi"
+                    className="w-full h-full object-cover rounded-full"
+                    onError={() => setImageError(true)}
+                  />
+                ) : (
+                  <div className="w-full h-full flex items-center justify-center bg-white rounded-full">
+                    <span className="text-3xl font-bold text-blue-600">OS</span>
+                  </div>
+                )}
+>>>>>>> da0d8cd14655fe7ce4c15ec435bb965f17cc8d9c
               </div>
             </div>
             <div className="flex items-center justify-center gap-2 text-gray-600 mb-4">
