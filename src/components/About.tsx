@@ -7,22 +7,22 @@ const About = () => {
     {
       icon: Globe,
       title: "International Experience",
-      description: "Thomas Jefferson Scholarship Program (TJSP) 2023-2024 cohort"
+      description: "Exchange Program at Minnesota State University, Mankato (2023-2024)"
     },
     {
       icon: Code,
-      title: "Technical Excellence",
-      description: "Full stack development with AI/ML expertise"
+      title: "Professional Experience",
+      description: "SAP Developer at Deloitte, Web Developer at SMART WMN Solutions"
     },
     {
       icon: Users,
-      title: "Community Leadership",
-      description: "Leading initiatives impacting 14,000+ students"
+      title: "Technical Expertise",
+      description: "Full-stack development with AI/ML, Cloud Computing, and SAP technologies"
     },
     {
       icon: Heart,
-      title: "Social Impact",
-      description: "Building inclusive technology for real-world problems"
+      title: "Innovation Focus",
+      description: "Building cutting-edge solutions with modern technologies and frameworks"
     }
   ];
 
@@ -39,15 +39,15 @@ const About = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <p className="text-lg text-gray-700 leading-relaxed">
-              I'm <span className="font-semibold text-blue-600">Ons Saidi</span>, a passionate and driven software engineering student from Tunisia with a deep interest in <span className="font-semibold">Artificial Intelligence, Web Development, and Social Impact Technology</span>.
+              I'm <span className="font-semibold text-blue-600">Ons Saidi</span>, a passionate software engineering student from Tunisia specializing in <span className="font-semibold">Web & Mobile Development, AI, Cloud Computing, Computer Vision, and Big Data</span>.
             </p>
             
             <p className="text-lg text-gray-700 leading-relaxed">
-              I'm committed to building inclusive, meaningful digital solutions that serve real people and communities. Currently completing my engineering degree at <span className="font-semibold">ISSAT Sousse</span>, I recently finished an academic year in the U.S. as part of the prestigious <span className="font-semibold text-purple-600">Thomas Jefferson Scholarship Program (TJSP)</span>.
+              Currently completing my engineering degree at <span className="font-semibold">ISSAT Sousse</span> with a minor in Web & Mobile Development, AI, Cloud Computing, Computer Vision, and Big Data. I recently completed an exchange program at <span className="font-semibold text-purple-600">Minnesota State University, Mankato</span> focusing on Web Development, Game Development, Azure Fundamentals, AI, and UI/UX.
             </p>
             
             <p className="text-lg text-gray-700 leading-relaxed">
-              I thrive in diverse, multicultural environments and have built a strong foundation in full stack development, AI/ML concepts, and project-based learning. My journey has been enriched by leading community initiatives, participating in international exchange programs, and creating tech projects that aim to solve real-world problems.
+              I have hands-on experience with SAP development at Deloitte, full-stack development at SMART WMN Solutions, and AI-driven optimization projects. My expertise spans from ABAP and SAP Fiori to React Native, Machine Learning, and Cloud technologies.
             </p>
             
             <div className="flex flex-wrap gap-3 pt-4">

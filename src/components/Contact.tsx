@@ -10,33 +10,33 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      value: "ons.saidi@example.com",
-      link: "mailto:ons.saidi@example.com"
+      value: "saidi.ons@issatso.u-sousse.tn",
+      link: "mailto:saidi.ons@issatso.u-sousse.tn"
     },
     {
       icon: MapPin,
-      title: "Location",
-      value: "Tunisia & USA",
-      link: null
+      title: "Phone",
+      value: "+216 95 685 285",
+      link: "tel:+21695685285"
     },
     {
       icon: Github,
       title: "GitHub",
-      value: "github.com/onssaidi",
-      link: "https://github.com"
+      value: "github.com/saidions01",
+      link: "https://github.com/saidions01"
     },
     {
       icon: Linkedin,
       title: "LinkedIn",
-      value: "linkedin.com/in/onssaidi",
-      link: "https://linkedin.com"
+      value: "linkedin.com/in/saidi-ons",
+      link: "https://www.linkedin.com/in/saidi-ons/"
     }
   ];
 
   const interests = [
-    { icon: Music, text: "Classical music & violin (first violinist)" },
-    { icon: Code, text: "EdTech, VR, AI for education" },
-    { icon: Heart, text: "Social entrepreneurship" }
+    { icon: Code, text: "AI, Web Development, Cloud Computing" },
+    { icon: Heart, text: "Innovation and Technology Solutions" },
+    { icon: Music, text: "Continuous Learning and Growth" }
   ];
 
   return (

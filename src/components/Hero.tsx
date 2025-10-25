@@ -14,27 +14,13 @@ const Hero = () => {
     <section className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 bg-gradient-to-r from-blue-600/5 to-purple-600/5"></div>
-      <div className="absolute top-20 left-20 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-20 right-20 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl"></div>
+      <div className="absolute top-20 left-20 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl animate-float"></div>
+      <div className="absolute bottom-20 right-20 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-float" style={{animationDelay: '1.5s'}}></div>
  
       <div className="max-w-4xl mx-auto text-center relative z-10">
         <div className="animate-fade-in">
           <div className="mb-6">
-<<<<<<< HEAD
-            <div className="w-60 h-60 mx-auto mb-6 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 p-1">
-              <div className="w-full h-full rounded-full bg-white flex items-center justify-center overflow-hidden">
-               <img 
-                  src="/me.png" 
-                  alt="Ons Saidi" 
-                  className="w-full h-full object-cover rounded-full"
-                  onError={(e) => {
-                    // Fallback to initials if image fails to load
-                    e.currentTarget.style.display = 'none';
-                    e.currentTarget.nextElementSibling.style.display = 'flex';
-                  }}
-                />
-=======
-            <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 p-1">
+            <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 p-1 animate-scale-in">
               <div className="w-full h-full rounded-full bg-white flex items-center justify-center overflow-hidden">
                 {!imageError ? (
                   <img
@@ -48,7 +34,6 @@ const Hero = () => {
                     <span className="text-3xl font-bold text-blue-600">OS</span>
                   </div>
                 )}
->>>>>>> da0d8cd14655fe7ce4c15ec435bb965f17cc8d9c
               </div>
             </div>
             <div className="flex items-center justify-center gap-2 text-gray-600 mb-4">
@@ -57,20 +42,19 @@ const Hero = () => {
             </div>
           </div>
 
-          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-gray-900 mb-6">
+          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 animate-fade-in">
             Ons{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
+            <span className="gradient-text">
               Saidi
             </span>
           </h1>
 
           <p className="text-xl sm:text-2xl text-gray-700 mb-4 font-medium">
-            Software Engineering Student
+            Software Engineering Student Looking For An End Of Study Internship
           </p>
 
           <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Passionate about AI, Web Development, and Social Impact Technology.
-            Building inclusive digital solutions that serve real communities.
+            Passionate about AI, Web Development, and Cloud Computing. Building innovative solutions with SAP, React, and Machine Learning technologies.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
@@ -91,13 +75,13 @@ const Hero = () => {
 
           <div className="flex justify-center gap-6">
             <a
-              href="mailto:ons.saidi@example.com"
+              href="mailto:saidi.ons@issatso.u-sousse.tn"
               className="text-gray-600 hover:text-blue-600 transition-colors duration-300"
             >
               <Mail size={24} />
             </a>
             <a
-              href="https://github.com"
+              href="https://github.com/saidions01"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-blue-600 transition-colors duration-300"
@@ -105,7 +89,7 @@ const Hero = () => {
               <Github size={24} />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/saidi-ons/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-blue-600 transition-colors duration-300"

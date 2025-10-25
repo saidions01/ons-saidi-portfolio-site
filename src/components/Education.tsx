@@ -6,39 +6,43 @@ import { GraduationCap, MapPin, Calendar, Award } from "lucide-react";
 const Education = () => {
   const educationData = [
     {
-      degree: "Bachelor's Degree in Software Engineering",
-      institution: "ISSAT Sousse, Tunisia",
-      period: "Expected 2025",
+      degree: "Engineering Studies - Minor in Web & Mobile Development, AI, Cloud Computing, Computer Vision, Big Data",
+      institution: "Higher Institute of Applied Sciences and Technology of Sousse (ISSATSo), Tunisia",
+      period: "2020 – Present",
       status: "In Progress",
       location: "Tunisia",
-      description: "Comprehensive software engineering program with focus on modern development practices and emerging technologies."
+      description: "Comprehensive engineering program with focus on Web & Mobile Development, AI, Cloud Computing, Computer Vision, and Big Data technologies."
     },
     {
       degree: "Exchange Program in Computer Science",
-      institution: "Minnesota State University, Mankato (USA)",
-      period: "2023–2024",
+      institution: "Minnesota State University, Mankato, USA",
+      period: "2023 – 2024",
       status: "Completed",
       location: "USA",
-      description: "Thomas Jefferson Scholarship Program (TJSP) - International exchange focusing on advanced computer science topics and cultural immersion."
+      description: "Exchange Program focusing on Web Development, Game Development, Azure Fundamentals, AI, and UI/UX."
     }
   ];
 
   const certifications = [
     {
-      title: "NVIDIA Deep Learning Institute",
-      items: [
-        "Fundamentals of Deep Learning",
-        "AI for Predictive Maintenance",
-        "Building Transformer-Based NLP Applications"
-      ]
+      title: "Udemy — SAP Training",
+      provider: "2025"
     },
     {
-      title: "Microsoft AI Fundamentals",
-      provider: "via MSU"
+      title: "Udemy — The Unity Developer",
+      provider: "2025"
     },
     {
-      title: "Web Development Bootcamps & Hackathons",
-      items: ["Multiple full-stack development workshops", "AI and ML specialized tracks"]
+      title: "NVIDIA — Deep Learning Fundamentals, NLP with Transformers",
+      provider: "2024"
+    },
+    {
+      title: "NVIDIA — Predictive Maintenance with AI",
+      provider: "2024"
+    },
+    {
+      title: "Udemy — The Web Development Bootcamp",
+      provider: "2024"
     }
   ];
 

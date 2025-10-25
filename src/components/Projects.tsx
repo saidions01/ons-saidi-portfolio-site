@@ -7,31 +7,44 @@ import { ExternalLink, Github, Trophy, Code, Globe } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
-      title: "Chasing Museums",
-      subtitle: "AEIF 2025 Semi-Finalist",
-      description: "A VR and gamified learning platform that makes history education more immersive and engaging. Focused on connecting Tunisian and U.S. cultures through architecture and storytelling.",
-      technologies: ["VR", "Game Development", "Educational Technology", "Cultural Heritage"],
-      status: "Semi-Finalist",
+      title: "University Resource Optimization Platform",
+      subtitle: "MNSU - React Native, Node.js, MongoDB",
+      description: "Developed a full-stack platform to automate PFE scheduling for professors, including account generation and real-time notifications. Integrated AI-driven optimization algorithms for resource allocation.",
+      technologies: ["React Native", "Node.js", "MongoDB", "AI Optimization", "Real-time Notifications"],
+      status: "Completed",
       icon: Trophy,
-      gradient: "from-yellow-500 to-orange-500"
+      gradient: "from-yellow-500 to-orange-500",
+      github: "https://github.com/saidions01"
     },
     {
-      title: "DualSense PS5 Tester",
+      title: "DS-5 Testing Tool",
       subtitle: "SMART WMN Solutions",
-      description: "A full stack web + hardware project to test the Sony DualSense controller using Raspberry Pi. Responsible for UI/UX design and backend logic integration.",
-      technologies: ["React", "Node.js", "Raspberry Pi", "Hardware Integration", "UI/UX"],
+      description: "Built a desktop app to test DualSense controllers in real-time with interactive diagnostics and feedback. Developed using Electron.js, Vue.js, and Raspberry Pi integration.",
+      technologies: ["Electron.js", "Vue.js", "Raspberry Pi", "Dualsense.js", "Node HID", "Pinia"],
       status: "Completed",
       icon: Code,
-      gradient: "from-blue-500 to-purple-500"
+      gradient: "from-blue-500 to-purple-500",
+      github: "https://github.com/saidions01"
     },
     {
-      title: "Jira Snapshot Tool",
-      subtitle: "MSU IT Department",
-      description: "Developed a predictive tool to help automate class scheduling and course guidance for students using past academic data and machine learning algorithms.",
-      technologies: ["Python", "Machine Learning", "Data Analytics", "Academic Systems"],
-      status: "Deployed",
+      title: "API Documentation Generator",
+      subtitle: "Node.js, HTML, Code Parsing, CI/CD",
+      description: "Developed an engine that extracts information from deprecated code to produce developer-friendly API documentation. Includes CI/CD integration and automated packaging.",
+      technologies: ["Node.js", "HTML", "Code Parsing", "CI/CD", "Packaging", "Documentation"],
+      status: "Completed",
       icon: Globe,
-      gradient: "from-green-500 to-teal-500"
+      gradient: "from-green-500 to-teal-500",
+      github: "https://github.com/saidions01"
+    },
+    {
+      title: "Predictive Class-Scheduling Platform",
+      subtitle: "MNSU - Full Stack Developer Intern",
+      description: "Led development of a predictive class-scheduling platform to optimize university resource allocation by 60%. Integrated genetic algorithms and reinforcement learning.",
+      technologies: ["Genetic Algorithms", "Reinforcement Learning", "OptaPlanner", "Azure SQL DB", "Flask", "React.js", "Docker"],
+      status: "Completed",
+      icon: Trophy,
+      gradient: "from-purple-500 to-pink-500",
+      github: "https://github.com/saidions01"
     }
   ];
 
@@ -83,13 +96,18 @@ const Projects = () => {
                   </Badge>
                   
                   <div className="flex gap-2">
-                    <Button size="sm" variant="outline" className="flex items-center gap-1">
+                    <Button 
+                      size="sm" 
+                      variant="outline" 
+                      className="flex items-center gap-1"
+                      onClick={() => window.open(project.github, '_blank')}
+                    >
                       <Github className="w-4 h-4" />
                       Code
                     </Button>
                     <Button size="sm" className="flex items-center gap-1">
                       <ExternalLink className="w-4 h-4" />
-                      Live
+                      Details
                     </Button>
                   </div>
                 </div>

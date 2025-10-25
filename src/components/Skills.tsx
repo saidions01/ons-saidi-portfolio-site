@@ -7,38 +7,38 @@ const Skills = () => {
   const skillCategories = [
     {
       icon: Code,
-      title: "Languages",
-      skills: ["Python", "JavaScript", "Java", "C/C++", "SQL"],
+      title: "Programming Languages",
+      skills: ["Python", "JavaScript", "TypeScript", "C", "C++", "Java", "SQL", "PHP", "Dart", "ABAP"],
       color: "from-blue-500 to-blue-600"
     },
     {
       icon: Palette,
-      title: "Frontend",
-      skills: ["HTML", "CSS", "React", "Vue.js", "Bootstrap"],
+      title: "Frameworks & Libraries",
+      skills: ["React Native", "Flutter", "Spring Boot", "SAP UI5", "Tailwind CSS", "Bootstrap"],
       color: "from-purple-500 to-purple-600"
     },
     {
       icon: Server,
-      title: "Backend",
-      skills: ["Node.js", "Express.js", "Firebase", "MongoDB", "PHP"],
+      title: "Web Development",
+      skills: ["HTML", "CSS", "Node.js", "Express.js", "React.js", "Vue.js", "Django", "Flask"],
       color: "from-green-500 to-green-600"
     },
     {
       icon: Brain,
-      title: "AI/ML",
-      skills: ["TensorFlow", "Keras", "NVIDIA Deep Learning", "Predictive Analytics"],
+      title: "AI & Data Technologies",
+      skills: ["Machine Learning", "Deep Learning", "TensorFlow", "PyTorch", "OpenCV", "CNNs", "NLP", "Reinforcement Learning", "Predictive Modeling", "Hadoop", "Big Data Analytics", "Data Visualization", "Pandas", "Matplotlib", "Power BI"],
       color: "from-red-500 to-red-600"
     },
     {
       icon: Wrench,
-      title: "Tools & Platforms",
-      skills: ["Git", "GitHub", "Figma", "Raspberry Pi", "Postman"],
+      title: "DevOps & Cloud",
+      skills: ["Git", "Docker", "Docker Compose", "CI/CD", "Azure", "GitHub", "GitLab"],
       color: "from-yellow-500 to-yellow-600"
     },
     {
       icon: Globe,
-      title: "Other",
-      skills: ["REST APIs", "Responsive Design", "Version Control", "Agile Workflow"],
+      title: "SAP Technologies",
+      skills: ["ABAP", "SAP Fiori", "SAP UI5", "OData Services", "SAP HANA", "CDS Views", "Smart Forms", "SAP Workflow", "S/4HANA"],
       color: "from-indigo-500 to-indigo-600"
     }
   ];
